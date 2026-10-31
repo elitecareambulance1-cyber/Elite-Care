@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Elite Care Ambulance">
+  <!-- Red rounded tile -->
+  <rect width="64" height="64" rx="14" fill="#DC2626"/>
+
+  <defs>
+    <!-- White medical cross (rounded arms) -->
+    <clipPath id="cross">
+      <path d="M30 12 h4 a3 3 0 0 1 3 3 v11 h11 a3 3 0 0 1 3 3 v6 a3 3 0 0 1 -3 3 h-11 v11 a3 3 0 0 1 -3 3 h-4 a3 3 0 0 1 -3 -3 v-11 h-11 a3 3 0 0 1 -3 -3 v-6 a3 3 0 0 1 3 -3 h11 v-11 a3 3 0 0 1 3 -3 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Cross -->
+  <path d="M30 12 h4 a3 3 0 0 1 3 3 v11 h11 a3 3 0 0 1 3 3 v6 a3 3 0 0 1 -3 3 h-11 v11 a3 3 0 0 1 -3 3 h-4 a3 3 0 0 1 -3 -3 v-11 h-11 a3 3 0 0 1 -3 -3 v-6 a3 3 0 0 1 3 -3 h11 v-11 a3 3 0 0 1 3 -3 z" fill="#FFFFFF"/>
+
+  <!-- ECG heartbeat line: white on red outside the cross -->
+  <path d="M5 33 H19 L22.5 26.5 L26.5 39 L30 22 L32.5 41.5 L35 28.5 L37.5 33 H59"
+        fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Same ECG line in red, visible only inside the white cross -->
+  <path d="M5 33 H19 L22.5 26.5 L26.5 39 L30 22 L32.5 41.5 L35 28.5 L37.5 33 H59"
+        fill="none" stroke="#DC2626" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+        clip-path="url(#cross)"/>
+</svg>

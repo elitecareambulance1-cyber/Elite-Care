@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#DC2626">
+    <title>إسعاف خاص في صعيد مصر — تغطية شاملة | إيليت كير</title>
+    <meta name="description" content="خدمة إسعاف خاص في صعيد مصر تشمل الأقصر وأسيوط وسوحاج والقاهرة. استجابة سريعة ومتعددة السيارات. اتصل الآن على 01060349212">
+    <meta name="keywords" content="إسعاف خاص صعيد مصر, إسعاف الأقصر, إسعاف أسيوط, إسعاف سوهاج, إسعاف قنا, سيارة إسعاف خاصة">
+    <link rel="canonical" href="https://elite-ambulance.online/areas/upper-egypt.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Cairo', sans-serif; color: #04111E; background: #f8f9fa; line-height: 1.8; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* Nav — unified brand style (dark navy like the rest of the site) */
+        nav { background: #04111E; box-shadow: 0 2px 15px rgba(0,0,0,0.25); position: sticky; top: 0; z-index: 1000; }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; max-width: 1200px; margin: 0 auto; }
+        .logo { display: flex; align-items: center; gap: 10px; font-size: 1.25rem; font-weight: 900; color: #fff; text-decoration: none; }
+        .logo img { width: 38px; height: 38px; border-radius: 9px; }
+        .logo span { color: #EF4444; }
+        .nav-links { display: flex; gap: 25px; align-items: center; list-style: none; }
+        .nav-links a { text-decoration: none; color: rgba(255,255,255,0.78); font-weight: 600; transition: color 0.3s; }
+        .nav-links a:hover { color: #fff; }
+        .nav-cta { background: #DC2626; color: #fff !important; padding: 10px 20px; border-radius: 8px; font-weight: 800; }
+        .nav-cta:hover { background: #B91C1C; }
+
+        /* Hero */
+        .hero { background: linear-gradient(135deg, #04111E 0%, #071E38 50%, #0A2A4A 100%); color: #fff; padding: 80px 0; text-align: center; }
+        .hero h1 { font-size: 2.5rem; font-weight: 900; margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px; opacity: 0.9; }
+        .hero-cta { display: inline-block; background: #DC2626; color: #fff; padding: 15px 40px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 1.1rem; transition: transform 0.3s, background 0.3s; }
+        .hero-cta:hover { transform: translateY(-2px); background: #B91C1C; }
+
+        /* Breadcrumb */
+        .breadcrumb { padding: 15px 0; font-size: 0.9rem; color: #666; }
+        .breadcrumb a { color: #DC2626; text-decoration: none; }
+
+        /* Section */
+        section { padding: 60px 0; }
+        .section-title { text-align: center; font-size: 2rem; font-weight: 900; margin-bottom: 15px; color: #04111E; }
+        .section-subtitle { text-align: center; color: #555; margin-bottom: 40px; font-size: 1.1rem; }
+
+        /* Coverage Grid */
+        .coverage-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 40px; }
+        .coverage-card { background: #fff; border-radius: 15px; padding: 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: transform 0.3s; border-right: 4px solid #DC2626; }
+        .coverage-card:hover { transform: translateY(-5px); }
+        .coverage-card h3 { font-size: 1.3rem; color: #DC2626; margin-bottom: 10px; }
+        .coverage-card .response { background: #fff3cd; color: #856404; padding: 5px 15px; border-radius: 20px; display: inline-block; font-size: 0.85rem; font-weight: 600; margin-bottom: 10px; }
+        .coverage-card p { color: #555; font-size: 0.95rem; }
+
+        /* Services */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .service-item { background: #fff; border-radius: 12px; padding: 25px; text-align: center; box-shadow: 0 3px 15px rgba(0,0,0,0.06); }
+        .service-item .icon { font-size: 2.5rem; margin-bottom: 15px; }
+        .service-item h4 { font-size: 1.1rem; margin-bottom: 8px; color: #04111E; }
+        .service-item p { font-size: 0.9rem; color: #666; }
+
+        /* FAQ */
+        .faq-item { background: #fff; border-radius: 12px; padding: 25px 30px; margin-bottom: 15px; box-shadow: 0 3px 10px rgba(0,0,0,0.05); }
+        .faq-item h3 { font-size: 1.15rem; color: #04111E; margin-bottom: 10px; }
+        .faq-item p { color: #555; }
+
+        /* CTA */
+        .cta-section { background: linear-gradient(135deg, #DC2626, #B91C1C); color: #fff; padding: 60px 0; text-align: center; }
+        .cta-section h2 { font-size: 2rem; margin-bottom: 15px; }
+        .cta-section p { font-size: 1.1rem; margin-bottom: 25px; opacity: 0.9; }
+        .cta-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+        .cta-btn { padding: 14px 30px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 1rem; transition: transform 0.3s; }
+        .cta-btn:hover { transform: translateY(-2px); }
+        .cta-btn-white { background: #fff; color: #DC2626; }
+        .cta-btn-outline { border: 2px solid #fff; color: #fff; }
+
+        /* Footer */
+        footer { background: #04111E; color: #fff; padding: 50px 0 20px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-bottom: 30px; }
+        .footer-col h4 { font-size: 1.1rem; margin-bottom: 15px; color: #DC2626; }
+        .footer-col a { display: block; color: #ccc; text-decoration: none; margin-bottom: 8px; transition: color 0.3s; }
+        .footer-col a:hover { color: #fff; }
+        .footer-col p { color: #aaa; font-size: 0.9rem; }
+        .footer-bottom { border-top: 1px solid #333; padding-top: 20px; text-align: center; color: #888; font-size: 0.85rem; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+            .nav-links { display: none; }
+        }
+
+        /* Floating WhatsApp (desktop) — unified with the rest of the site */
+        .whatsapp-float { position: fixed; bottom: 82px; left: 20px; z-index: 999; width: 56px; height: 56px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(37,211,102,0.4); transition: all 0.3s; }
+        .whatsapp-float:hover { transform: scale(1.1); }
+        .whatsapp-float svg { width: 28px; height: 28px; fill: #fff; }
+        /* Mobile sticky bar */
+        .sticky-bar { display: none; position: fixed; bottom: 0; right: 0; left: 0; background: #04111E; border-top: 2px solid #DC2626; z-index: 999; padding: 10px 12px; gap: 10px; padding-bottom: max(10px, env(safe-area-inset-bottom)); }
+        .sticky-bar a { flex: 1; display: flex; align-items: center; justify-content: center; gap: 7px; padding: 12px 10px; border-radius: 10px; text-decoration: none; font-weight: 800; font-size: 0.85rem; min-height: 48px; }
+        .sticky-call { background: #DC2626; color: #fff; }
+        .sticky-wa { background: #16A34A; color: #fff; }
+
+        /* Mobile: sticky-bar replaces the floating buttons (must come LAST) */
+        @media (max-width: 768px) {
+            .whatsapp-float { display: none; }
+            .sticky-bar { display: flex; }
+            footer { padding-bottom: 88px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="../index.html" class="logo"><img src="../assets/images/logo.webp" alt="إيليت كير للإسعاف" width="38" height="38">إيليت <span>كير</span></a>
+        <ul class="nav-links">
+            <li><a href="../index.html">الرئيسية</a></li>
+            <li><a href="../services.html">خدماتنا</a></li>
+            <li><a href="../areas/cairo.html">مناطق التغطية</a></li>
+            <li><a href="../blog.html">المدونة</a></li>
+            <li><a href="tel:01060349212" class="nav-cta">اتصل الآن</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container">
+        <h1>إسعاف خاص في صعيد مصر</h1>
+        <p>تغطية شاملة لجميع المحافظات في صعيد مصر مع استجابة سريعة ومتعددة السيارات المتخصصة</p>
+        <a href="tel:01060349212" class="hero-cta">احجز الآن — 01060349212</a>
+    </div>
+</section>
+
+<div class="container">
+    <div class="breadcrumb">
+        <a href="../index.html">الرئيسية</a> / <a href="../areas.html">مناطق التغطية</a> / صعيد مصر
+    </div>
+</div>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">مناطق التغطية في صعيد مصر</h2>
+        <p class="section-subtitle">نوفر خدمة إسعاف احترافية في جميع محافظات صعيد مصر بأسرع وقت ممكن</p>
+
+        <div class="coverage-grid">
+            <div class="coverage-card">
+                <h3>الأقصر</h3>
+                <span class="response">وقت الاستجابة: 15-25 دقيقة</span>
+                <p>تغطية كاملة لمدينة الأقصر والمناطق السياحية على ضفتي النيل. نوفر سيارات إسعاف مجهزة بالكامل للحالات الحرجة والسياحية.</p>
+            </div>
+            <div class="coverage-card">
+                <h3>أسيوط</h3>
+                <span class="response">وقت الاستجابة: 20-30 دقيقة</span>
+                <p>خدمة إسعاف متخصصة في مدينة أسيوط والقرى المجاورة. فريق طبي مدرب على التعامل مع الحالات الطارئة على مدار الساعة.</p>
+            </div>
+            <div class="coverage-card">
+                <h3>سوهاج</h3>
+                <span class="response">وقت الاستجابة: 20-30 دقيقة</span>
+                <p>تغطية شاملة لمدينة سوهاج ومحافظتها. نوفر نقل آمن للمرضى بين المستشفيات مع رعاية طبية متواصلة.</p>
+            </div>
+            <div class="coverage-card">
+                <h3>قنا</h3>
+                <span class="response">وقت الاستجابة: 20-30 دقيقة</span>
+                <p>خدمة إسعاف في قنا والمدن المجاورة مثل נجع حمادي и قوص. استجابة سريعة للحالات الطارئة في جميع أنحاء المحافظة.</p>
+            </div>
+            <div class="coverage-card">
+                <h3>الفيوم</h3>
+                <span class="response">وقت الاستجابة: 25-35 دقيقة</span>
+                <p>تغطية مدينة الفيوم والمنطقة المحيطة. نوفر سيارات إسعاف مجهزة للرحلات الطويلة والقصيرة مع رعاية كاملة.</p>
+            </div>
+            <div class="coverage-card">
+                <h3>بني سويف</h3>
+                <span class="response">وقت الاستجابة: 25-35 دقيقة</span>
+                <p>خدمة إسعاف في بني سويف والمنيا. فريق طبي متخصص ومتاح على مدار الساعة للحالات الطارئة والنقل الآمن.</p>
+            </div>
+            <div class="coverage-card">
+                <h3>المنيا</h3>
+                <span class="response">وقت الاستجابة: 25-35 دقيقة</span>
+                <p>تغطية شاملة لمدينة المنيا والقرى المجاورة. نوفر نقل آمن للمرضى مع مراقبة مستمرة ورعاية طبية متميزة.</p>
+            </div>
+            <div class="coverage-card">
+                <h3>أسيوط والصعيد الشرقي</h3>
+                <span class="response">وقت الاستجابة: 25-40 دقيقة</span>
+                <p>خدمة إسعاف في المناطق النائية من صعيد مصر. نصل إليك أينما كنت لتوفير أفضل رعاية طبية ممكنة.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="background: #fff;">
+    <div class="container">
+        <h2 class="section-title">الخدمات المتاحة في صعيد مصر</h2>
+        <p class="section-subtitle">جميع خدمات الإسعاف متاحة في مناطق تغطية صعيد مصر</p>
+
+        <div class="services-grid">
+            <div class="service-item">
+                <div class="icon">🚑</div>
+                <h4>إسعاف طوارئ</h4>
+                <p>استجابة فورية للحالات الطارئة مع فريق طبي مدرب ومجهز بأحدث المعدات</p>
+            </div>
+            <div class="service-item">
+                <div class="icon">🏥</div>
+                <h4>نقل بين المستشفيات</h4>
+                <p>نقل آمن للمرضى بين المستشفيات في جميع أنحاء صعيد مصر</p>
+            </div>
+            <div class="service-item">
+                <div class="icon">💊</div>
+                <h4>نقل الأدوية والتبرعات</h4>
+                <p>نقل آمن للأدوية والتبرعات الطبية بين المدن والمستشفيات</p>
+            </div>
+            <div class="service-item">
+                <div class="icon">🫀</div>
+                <h4>عناية مركزة متنقلة</h4>
+                <p>سيارات إسعاف مجهزة بوحدات عناية مركزة للحالات الحرجة</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">الأسئلة الشائعة</h2>
+
+        <div class="faq-item">
+            <h3>ما هو وقت الاستجابة في صعيد مصر؟</h3>
+            <p>يختلف وقت الاستجابة حسب الموقع، لكنه عادة من 15 إلى 35 دقيقة في المدن الرئيسية. في المناطق النائية قد يستغرق الأمر أطول قليلاً.</p>
+        </div>
+        <div class="faq-item">
+            <h3>هل تغطون المناطق الريفية في صعيد مصر؟</h3>
+            <p>نعم، نوفر تغطية شاملة للمناطق الريفية والقرى في جميع محافظات صعيد مصر. تواصل معنا للتأكد من تغطية منطقتك.</p>
+        </div>
+        <div class="faq-item">
+            <h3>هل يمكن حجز إسعاف مسبقًا لنقل مريض؟</h3>
+            <p>نعم، يمكنك الحجز مسبقًا للنقل المplan. اتصل بنا قبل 24 ساعة على الأقل لضمان التوفر.</p>
+        </div>
+        <div class="faq-item">
+            <h3>ما هي معدات السيارات المتاحة في صعيد مصر؟</h3>
+            <p>جميع سياراتنا مجهزة بأجهزة التنفس الاصطناعي، أجهزة مراقبة العلامات الحيوية، أجهزة الصدمات الكهربائية، والneeded equipment للحالات الحرجة.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <h2>هل تحتاج إسعاف في صعيد مصر؟</h2>
+        <p>اتصل الآن للحصول على خدمة إسعاف سريعة وموثوقة في جميع أنحاء صعيد مصر</p>
+        <div class="cta-buttons">
+            <a href="tel:01060349212" class="cta-btn cta-btn-white">اتصل الآن: 01060349212</a>
+            <a href="https://wa.me/201111456662" class="cta-btn cta-btn-outline">واتساب</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>إيليت كير</h4>
+                <p>خدمة إسعاف خاص متخصصة في نقل المرضى والحالات الطارئة في جميع أنحاء مصر.</p>
+            </div>
+            <div class="footer-col">
+                <h4>روابط سريعة</h4>
+                <a href="../index.html">الرئيسية</a>
+                <a href="../services.html">خدماتنا</a>
+                <a href="../areas.html">مناطق التغطية</a>
+                <a href="../blog.html">المدونة</a>
+            </div>
+            <div class="footer-col">
+                <h4>مناطق التغطية</h4>
+                <a href="cairo.html">القاهرة</a>
+                <a href="alexandria.html">الإسكندرية</a>
+                <a href="upper-egypt.html">صعيد مصر</a>
+                <a href="delta.html">الدلتا</a>
+            </div>
+            <div class="footer-col">
+                <h4>تواصل معنا</h4>
+                <p>الهاتف: 01060349212</p>
+                <p>واتساب: 201111456662</p>
+                <p>الموقع: elite-ambulance.online</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>جميع الحقوق محفوظة © 2026 إيليت كير — elite-ambulance.online</p>
+        </div>
+    </div>
+</footer>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "إسعاف خاص في صعيد مصر",
+    "description": "خدمة إسعاف خاص في صعيد مصر تشمل الأقصر وأسيوط وسوهاج والفيوم وبني سويف والمنيا مع استجابة سريعة ومتعددة السيارات المتخصصة",
+    "provider": {
+        "@type": "Organization",
+        "name": "إيليت كير",
+        "url": "https://elite-ambulance.online",
+        "telephone": "+201060349212"
+    },
+    "areaServed": ["الأقصر", "أسيوط", "سوهاج", "قنا", "الفيوم", "بني سويف", "المنيا"],
+    "serviceType": "إسعاف خاص ونقل مرضى"
+}
+</script>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "الرئيسية",
+            "item": "https://elite-ambulance.online/index.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "مناطق التغطية",
+            "item": "https://elite-ambulance.online/areas.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "صعيد مصر",
+            "item": "https://elite-ambulance.online/areas/upper-egypt.html"
+        }
+    ]
+}
+</script>
+
+<!-- Floating WhatsApp (desktop) -->
+<a href="https://wa.me/201111456662" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="تواصل عبر واتساب"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+
+<!-- Mobile sticky bar -->
+<div class="sticky-bar" role="region" aria-label="التواصل السريع">
+    <a href="tel:01060349212" class="sticky-call">📞 اتصل الآن</a>
+    <a href="https://wa.me/201111456662" class="sticky-wa" target="_blank" rel="noopener noreferrer">💬 واتساب</a>
+</div>
+
+</body>
+</html>

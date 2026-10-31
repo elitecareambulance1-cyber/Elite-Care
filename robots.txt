@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /cairo/sitemap.xml
+
+Sitemap: https://elite-ambulance.online/sitemap.xml

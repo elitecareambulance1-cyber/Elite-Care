@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#DC2626">
+    <title>نقل العناية المركزة بين المستشفيات — دليل شامل 2026 | إيليت كير</title>
+    <meta name="description" content="دليل شامل لعملية نقل العناية المركزة بين المستشفيات في مصر. خطوات التحضير والتنسيق والمعدات اللازمة لنقل آمن للمرضى.">
+    <meta name="keywords" content="نقل العناية المركزة, نقل مرضى بين المستشفيات, سيارة عناية مركزة, نقل طبي آمن, إيليت كير">
+    <link rel="canonical" href="https://elite-ambulance.online/blog/posts/icu-transfer-guide.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Cairo', sans-serif; color: #04111E; background: #f8f9fa; line-height: 1.9; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        nav { background: #fff; box-shadow: 0 2px 15px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; max-width: 1200px; margin: 0 auto; }
+        .logo { font-size: 1.5rem; font-weight: 900; color: #DC2626; text-decoration: none; }
+        .logo span { color: #04111E; }
+        .nav-links { display: flex; gap: 25px; align-items: center; list-style: none; }
+        .nav-links a { text-decoration: none; color: #04111E; font-weight: 600; transition: color 0.3s; }
+        .nav-links a:hover { color: #DC2626; }
+        .nav-cta { background: #DC2626; color: #fff !important; padding: 10px 20px; border-radius: 8px; }
+
+        .hero-blog { background: linear-gradient(135deg, #04111E, #0A2A4A); color: #fff; padding: 60px 0; }
+        .hero-blog h1 { font-size: 2.2rem; font-weight: 900; margin-bottom: 15px; }
+        .hero-blog .meta { opacity: 0.8; font-size: 0.95rem; }
+
+        .breadcrumb { padding: 15px 0; font-size: 0.9rem; color: #666; }
+        .breadcrumb a { color: #DC2626; text-decoration: none; }
+
+        .article-body { background: #fff; border-radius: 15px; padding: 50px; margin: 30px auto; max-width: 900px; box-shadow: 0 5px 25px rgba(0,0,0,0.06); }
+        .article-body h2 { font-size: 1.6rem; color: #04111E; margin: 35px 0 15px; padding-right: 15px; border-right: 4px solid #DC2626; }
+        .article-body h3 { font-size: 1.3rem; color: #333; margin: 25px 0 12px; }
+        .article-body p { margin-bottom: 18px; color: #444; }
+        .article-body ul { margin: 15px 0; padding-right: 25px; }
+        .article-body li { margin-bottom: 10px; color: #444; }
+        .article-body strong { color: #04111E; }
+        .article-body a { color: #DC2626; text-decoration: none; font-weight: 600; }
+
+        .steps-box { background: #f0f7ff; padding: 30px; border-radius: 12px; margin: 25px 0; }
+        .steps-box h3 { color: #0A2A4A; margin-bottom: 20px; }
+        .step { display: flex; gap: 15px; margin-bottom: 20px; align-items: flex-start; }
+        .step-num { background: #DC2626; color: #fff; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; }
+        .step-content h4 { font-size: 1.1rem; color: #04111E; margin-bottom: 5px; }
+        .step-content p { margin-bottom: 0; }
+
+        .checklist { background: #d4edda; border-right: 4px solid #28a745; padding: 20px 25px; border-radius: 8px; margin: 25px 0; }
+        .checklist h4 { color: #155724; margin-bottom: 10px; }
+        .checklist ul { list-style: none; padding: 0; }
+        .checklist li { padding: 5px 0; color: #155724; }
+        .checklist li::before { content: "✓ "; font-weight: bold; }
+
+        .cta-inline { background: linear-gradient(135deg, #DC2626, #B91C1C); color: #fff; padding: 40px; border-radius: 12px; margin: 40px 0; text-align: center; }
+        .cta-inline h3 { font-size: 1.5rem; margin-bottom: 10px; }
+        .cta-inline p { margin-bottom: 20px; opacity: 0.9; }
+        .cta-inline a { display: inline-block; background: #fff; color: #DC2626; padding: 12px 30px; border-radius: 8px; text-decoration: none; font-weight: 700; }
+
+        footer { background: #04111E; color: #fff; padding: 50px 0 20px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-bottom: 30px; }
+        .footer-col h4 { font-size: 1.1rem; margin-bottom: 15px; color: #DC2626; }
+        .footer-col a { display: block; color: #ccc; text-decoration: none; margin-bottom: 8px; }
+        .footer-col a:hover { color: #fff; }
+        .footer-col p { color: #aaa; font-size: 0.9rem; }
+        .footer-bottom { border-top: 1px solid #333; padding-top: 20px; text-align: center; color: #888; font-size: 0.85rem; }
+
+        @media (max-width: 768px) {
+            .hero-blog h1 { font-size: 1.6rem; }
+            .article-body { padding: 25px; }
+            .nav-links { display: none; }
+            .step { flex-direction: column; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="../../index.html" class="logo">إيليت <span>كير</span></a>
+        <ul class="nav-links">
+            <li><a href="../../index.html">الرئيسية</a></li>
+            <li><a href="../../services.html">خدماتنا</a></li>
+            <li><a href="../../areas.html">مناطق التغطية</a></li>
+            <li><a href="../../blog.html">المدونة</a></li>
+            <li><a href="tel:01060349212" class="nav-cta">اتصل الآن</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="hero-blog">
+    <div class="container">
+        <h1>نقل العناية المركزة بين المستشفيات — دليل شامل 2026</h1>
+        <p class="meta">نشر في 10 يوليو 2026 | بواسطة فريق إيليت كير</p>
+    </div>
+</section>
+
+<div class="container">
+    <div class="breadcrumb">
+        <a href="../../index.html">الرئيسية</a> / <a href="../../blog.html">المدونة</a> / دليل نقل العناية المركزة بين المستشفيات
+    </div>
+</div>
+
+<article class="article-body">
+    <p>نقل المرضى من العناية المركزة في مستشفى إلى مستشفى آخر يتطلب تخطيطاً دقيقاً وتنسيق محكم. في هذا الدليل نشرح خطوات العملية كاملة من التحضير إلى الوصول، لضمان نقل آمن ومريح للمريض.</p>
+
+    <h2>متى تحتاج إلى نقل مريض العناية المركزة</h2>
+    <p>هناك عدة أسباب قد تتطلب نقل مريض العناية المركزة بين المستشفيات:</p>
+    <ul>
+        <li><strong>نقص التخصص:</strong> عندما لا يتوفر التخصص الطبي المطلوب في المستشفى الحالي</li>
+        <li><strong>نقص المعدات:</strong> عدم توفر جهاز أو معدة طبية معينة مطلوبة للعلاج</li>
+        <li><strong>طلب العائلة:</strong> رغبة العائلة في نقل المريض لمستشفى أقرب أو أفضل</li>
+        <li><strong>التأمين:</strong> تغطية التأمين الطبي في مستشفى معين فقط</li>
+        <li><strong>البحث عن علاج متخصص:</strong> وجود برنامج علاجي متخصص في مستشفى آخر</li>
+        <li><strong>إغلاق الأسرّة:</strong> نقص الأسرّة في العناية المركزة في المستشفى الحالي</li>
+    </ul>
+
+    <h2>خطوات عملية النقل</h2>
+
+    <div class="steps-box">
+        <h3>الخطوات الرئيسية لنقل مريض العناية المركزة</h3>
+        
+        <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+                <h4>التقييم الطبي الأولي</h4>
+                <p>يقوم الطبيب المعالج بتقييم حالة المريض ومدى لياقته للنقل. يشمل ذلك فحص العلامات الحيوية واستقرار الحالة الطبية.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+                <h4>التنسيق مع المستشفى المستقبل</h4>
+                <p>التواصل مع المستشفى المستقبل للتأكد من توفر السرير والمعدات والأطباء المختصين استعداداً لاستقبال المريض.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+                <h4>اختيار خدمة النقل المناسبة</h4>
+                <p>التواصل مع خدمة نقل العناية المركزة المتخصصة لتحديد نوع السيارة والطاقم الطبي المطلوب حسب حالة المريض.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-content">
+                <h4>تحضير المريض للنقل</h4>
+                <p>إعداد المريض من ناحية الأدوية والأجهزة والتوثيق الطبي. التأكد من استقرار الحالة قبل النقل.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-num">5</div>
+            <div class="step-content">
+                <h4>النقل الفعلي</h4>
+                <p>نقل المريض مع مراقبة مستمرة للعلامات الحيوية وتقديم العلاج اللازمة أثناء الطريق.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-num">6</div>
+            <div class="step-content">
+                <h4>التسليم والاستلام</h4>
+                <p>تسليم المريض للفريق الطبي في المستشفى المستقبل مع تسليم جميع الوثائق الطبية والسجلات اللازمة.</p>
+            </div>
+        </div>
+    </div>
+
+    <h2>المعدات اللازمة أثناء النقل</h2>
+    <p>يجب التأكد من توفر جميع المعدات اللازمة قبل بدء عملية النقل:</p>
+
+    <div class="checklist">
+        <h4>قائمة المعدات الأساسية</h4>
+        <ul>
+            <li>جهاز مراقبة العلامات الحيوية المستمر</li>
+            <li>جهاز تنفس اصطناعي محمول</li>
+            <li>أجهزة أكسجين متنوعة</li>
+            <li>جهاز صدمات كهربائية</li>
+            <li>حقن الأدوية ومضخات点滴</li>
+            <li>أدوات إنعاش قلب رئوي</li>
+            <li>أدوات إزالة الإفرازات التنفسية</li>
+            <li>حقيبة إسعافات قطرياً متكاملة</li>
+            <li>سجلات المريض الطبية الكاملة</li>
+            <li>أدوية طوارئ متنوعة</li>
+        </ul>
+    </div>
+
+    <h2>التنسيق بين المستشفيات</h2>
+    <p>التنسيق الفعّال بين المستشفيات أمر بالغ الأهمية لضمان نقل آمن وسلس. يشمل ذلك:</p>
+    <ul>
+        <li>إرسال تقرير طبي مفصل عن حالة المريض للمستشفى المستقبل</li>
+        <li>التأكد من توفر جميع المعدات والأدوية المطلوبة</li>
+        <li>تحديد وقت الوصول المتوقع والاستعداد لاستقبال المريض</li>
+        <li>التنسيق مع فريق الإسعاف لتحديد مسار النقل الأنسب</li>
+        <li>إرسال نسخة من سجلات المريض إلكترونياً إذا أمكن</li>
+    </ul>
+
+    <h2>دور الطاقم الطبي أثناء النقل</h2>
+    <p>الطاقم الطبي المرافق للمريض يلعب دوراً محورياً في ضمان سلامة المريض:</p>
+    <ul>
+        <li><strong>الطبيب:</strong> مراقبة الحالة الطبية واستشارة العلاج اللازمة</li>
+        <li><strong>الممرض:</strong> إدارة الأدوية والمراقبة المستمرة</li>
+        <li><strong>فني الإسعاف:</strong> تشغيل المعدات ومساعدة في النقل</li>
+    </ul>
+
+    <h3>المخاطر المحتملة وكيفية تجنبها</h3>
+    <p>هناك بعض المخاطر التي قد تحدث أثناء نقل مرضى العناية المركزة، ويمكن تجنبها بالتحضير الجيد:</p>
+    <ul>
+        <li><strong>انقطاع الأكسجين:</strong> التأكد من توفر أكسجين كافٍ وبدائل احتياطية</li>
+        <li><strong>انقطاع الكهرباء:</strong> توفر مولدات كهربائية متنقلة وأجهزة تعمل بالبطارية</li>
+        <li><strong>تدهور الحالة:</strong> توفر أدوية طوارئ ومعدات إنعاش</li>
+        <li><strong>تأخير الوصول:</strong> التخطيط الجيد لمسار النقل والوقت</li>
+    </ul>
+
+    <h2>نصائح للأهالي</h2>
+    <p>إذا كنت ت plan نقل مريض من العناية المركزة، إليك بعض النصائح المهمة:</p>
+    <ul>
+        <li>تواصل مبكراً مع خدمة النقل للحصول على المشورة</li>
+        <li>احضر جميع الوثائق الطبية والسجلات</li>
+        <li>اطلب شرحاً كاملاً عن عملية النقل والمعدات المستخدمة</li>
+        <li>تأكد من وجود طاقم طبي كافٍ لمرافقة المريض</li>
+        <li>اطلب تحديثاً عن حالة المريض بعد كل مرحلة</li>
+    </ul>
+
+    <div class="cta-inline">
+        <h3>هل تحتاج نقل مريض عناية مركزة؟</h3>
+        <p>فريقنا جاهز لمساعدتك في كل خطوات العملية. تواصل معنا للحصول على استشارة مجانية وعرض سعر مفصل</p>
+        <a href="tel:01060349212">اتصل الآن: 01060349212</a>
+    </div>
+
+    <h2>الخلاصة</h2>
+    <p>نقل مرضى العناية المركزة بين المستشفيات عملية معقدة تتطلب تخطيطاً دقيقاً وتنسيق محكم. اختيار خدمة نقل موثوقة وذات خبرة يضمن سلامة المريض ويوفر راحة البال للعائلة. لا تتردد في التواصل معنا للحصول على المساعدة اللازمة في أي وقت.</p>
+
+    <p>اقرأ أيضاً <a href="when-need-icu.html">متى تحتاج سيارة عناية مركزة</a> أو زوروا صفحة <a href="../../services.html">خدماتنا</a> لمعرفة المزيد.</p>
+</article>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>إيليت كير</h4>
+                <p>خدمة إسعاف خاص متخصصة في نقل المرضى والحالات الطارئة في جميع أنحاء مصر.</p>
+            </div>
+            <div class="footer-col">
+                <h4>روابط سريعة</h4>
+                <a href="../../index.html">الرئيسية</a>
+                <a href="../../services.html">خدماتنا</a>
+                <a href="../../areas.html">مناطق التغطية</a>
+                <a href="../../blog.html">المدونة</a>
+            </div>
+            <div class="footer-col">
+                <h4>تواصل معنا</h4>
+                <p>الهاتف: 01060349212</p>
+                <p>واتساب: 201111456662</p>
+                <p>الموقع: elite-ambulance.online</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>جميع الحقوق محفوظة © 2026 إيليت كير — elite-ambulance.online</p>
+        </div>
+    </div>
+</footer>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "نقل العناية المركزة بين المستشفيات — دليل شامل 2026",
+    "description": "دليل شامل لعملية نقل العناية المركزة بين المستشفيات في مصر",
+    "author": {
+        "@type": "Organization",
+        "name": "إيليت كير"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "إيليت كير",
+        "url": "https://elite-ambulance.online"
+    },
+    "datePublished": "2026-07-10",
+    "dateModified": "2026-07-10",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://elite-ambulance.online/blog/posts/icu-transfer-guide.html"
+    }
+}
+</script>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "الرئيسية",
+            "item": "https://elite-ambulance.online/index.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "المدونة",
+            "item": "https://elite-ambulance.online/blog.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "دليل نقل العناية المركزة بين المستشفيات",
+            "item": "https://elite-ambulance.online/blog/posts/icu-transfer-guide.html"
+        }
+    ]
+}
+</script>
+
+<style>
+/* Floating WhatsApp (desktop) — unified across the site */
+.whatsapp-float{position:fixed;bottom:82px;left:20px;z-index:999;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,0.4);transition:all .3s}
+.whatsapp-float:hover{transform:scale(1.1)}
+.whatsapp-float svg{width:28px;height:28px;fill:#fff}
+.sticky-bar{display:none;position:fixed;bottom:0;right:0;left:0;background:#04111E;border-top:2px solid #DC2626;z-index:999;padding:10px 12px;gap:10px;padding-bottom:max(10px,env(safe-area-inset-bottom))}
+.sticky-bar a{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;padding:12px 10px;border-radius:10px;text-decoration:none;font-weight:800;font-size:.85rem;min-height:48px}
+.sticky-call{background:#DC2626;color:#fff}
+.sticky-wa{background:#16A34A;color:#fff}
+@media (max-width:768px){
+  .whatsapp-float{display:none}
+  .sticky-bar{display:flex}
+  footer{padding-bottom:96px}
+}
+</style>
+<a href="https://wa.me/201111456662" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="تواصل عبر واتساب"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+<div class="sticky-bar" role="region" aria-label="التواصل السريع">
+  <a href="tel:01060349212" class="sticky-call">📞 اتصل الآن</a>
+  <a href="https://wa.me/201111456662" class="sticky-wa" target="_blank" rel="noopener noreferrer">💬 واتساب</a>
+</div>
+
+</body>
+</html>

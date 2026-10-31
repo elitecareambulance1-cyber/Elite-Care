@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="theme-color" content="#DC2626">
+<title>توصيل أكسجين ومستلزمات طبية للمنازل | Elite Care</title>
+<meta name="description" content="خدمة توصيل أكسجين للمنازل في مصر 24/7 — أسطوانات أكسجين، مكثفات أكسجين، أجهزة تنفس، مستلزمات طبية مع صيانة دورية. اتصل: 01060349212">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--fn:'Cairo',sans-serif;--navy:#04111E;--gold:#DC2626;--g100:#f8f9fa;--g200:#e9ecef;--g600:#6c757d;--r20:16px;--shadow:0 4px 24px rgba(0,0,0,0.08);--shadow-hover:0 12px 40px rgba(0,0,0,0.15)}
+*,::after,::before{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:var(--fn);color:#222;line-height:1.8;background:#fff}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;height:auto;display:block}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+/* NAV */
+nav{background:var(--navy);color:#fff;padding:12px 0;position:sticky;top:0;z-index:1000;box-shadow:0 2px 16px rgba(0,0,0,0.15)}
+nav .container{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+nav .logo{font-weight:900;font-size:1.2rem;color:#DC2626}
+nav .logo span{color:#fff}
+nav .nav-links{display:flex;gap:16px;list-style:none;font-size:0.85rem;font-weight:600}
+nav .nav-links a{padding:6px 12px;border-radius:8px;transition:all 0.3s}
+nav .nav-links a:hover{background:rgba(220,38,38,0.12);color:var(--gold)}
+.phone-cta{background:var(--gold);color:#fff;padding:8px 20px;border-radius:50px;font-weight:700;font-size:0.85rem;transition:0.3s}
+.phone-cta:hover{background:#B91C1C;transform:scale(1.05)}
+/* HERO */
+.hero{background:linear-gradient(135deg,var(--navy),#0A2A4A);color:#fff;padding:60px 0;text-align:center}
+.hero h1{font-size:clamp(1.6rem,3vw,2.4rem);font-weight:900;margin-bottom:12px}
+.hero p{font-size:clamp(0.95rem,1.5vw,1.15rem);opacity:0.9;max-width:700px;margin:0 auto 24px}
+.hero .hero-badge{display:inline-block;background:rgba(220,38,38,0.18);color:#FCA5A5;padding:6px 24px;border-radius:50px;font-size:0.85rem;font-weight:700;margin-bottom:16px;border:1px solid rgba(220,38,38,0.3)}
+.hero-stats{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin-top:24px}
+.hero-stats div{text-align:center}
+.hero-stats strong{display:block;font-size:1.8rem;color:var(--gold)}
+.hero-stats span{font-size:0.85rem;opacity:0.8}
+/* SECTIONS */
+section{padding:60px 0}
+.section-title{text-align:center;font-size:clamp(1.4rem,2.5vw,1.8rem);font-weight:900;color:var(--navy);margin-bottom:40px}
+.section-title span{color:var(--gold)}
+/* Service Grid */
+.grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+.feature-card{background:#fff;border:1px solid var(--g200);border-radius:var(--r20);padding:28px 20px;text-align:center;transition:all 0.3s}
+.feature-card:hover{border-color:var(--gold);box-shadow:var(--shadow-hover);transform:translateY(-4px)}
+.feature-card .icon{font-size:2.4rem;margin-bottom:12px}
+.feature-card h3{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:8px}
+.feature-card p{font-size:0.85rem;color:var(--g600)}
+/* Feature Row */
+.feature-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;align-items:center;margin-bottom:60px}
+.feature-row.reverse{direction:ltr}
+.feature-row.reverse > *{direction:rtl}
+.feature-row img{border-radius:var(--r20);box-shadow:var(--shadow);width:100%;aspect-ratio:16/10;object-fit:cover;background:var(--g200)}
+.feature-row h3{font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:8px}
+.feature-row p{font-size:0.9rem;color:var(--g600);margin-bottom:12px}
+.feature-row ul{list-style:none;font-size:0.88rem}
+.feature-row ul li::before{content:"✓ ";color:var(--gold);font-weight:700}
+/* FAQ */
+.faq-item{border:1px solid var(--g200);border-radius:var(--r20);margin-bottom:12px;overflow:hidden}
+.faq-q{background:var(--g100);padding:16px 20px;font-weight:700;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:0.3s}
+.faq-q:hover{background:#e9ecef}
+.faq-q .arrow{transition:0.3s;font-size:0.8rem}
+.faq-item.active .faq-q .arrow{transform:rotate(180deg)}
+.faq-a{padding:0 20px;max-height:0;overflow:hidden;transition:all 0.4s}
+.faq-item.active .faq-a{padding:16px 20px;max-height:400px}
+.faq-a p{font-size:0.9rem;color:var(--g600)}
+/* CTA */
+.cta{background:linear-gradient(135deg,var(--navy),#0A2A4A);color:#fff;text-align:center;padding:60px 20px}
+.cta h2{font-size:clamp(1.4rem,2.5vw,1.8rem);font-weight:900;margin-bottom:12px}
+.cta p{margin-bottom:24px;opacity:0.9}
+.cta-btn{display:inline-block;background:var(--gold);color:#fff;padding:14px 36px;border-radius:50px;font-weight:700;font-size:1.05rem;transition:0.3s}
+.cta-btn:hover{background:#B91C1C;transform:scale(1.05)}
+/* BOOKING */
+.booking-section{background:var(--g100)}
+.booking-form{max-width:700px;margin:0 auto;background:#fff;padding:32px;border-radius:var(--r20);box-shadow:var(--shadow)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-group{margin-bottom:16px}
+.form-group.full{grid-column:1/-1}
+.booking-input{width:100%;padding:12px 16px;border:2px solid var(--g200);border-radius:12px;font-family:var(--fn);font-size:0.9rem;transition:0.3s}
+.booking-input:focus{outline:none;border-color:var(--gold)}
+.booking-input.error{border-color:#dc3545}
+textarea.booking-input{resize:vertical;min-height:100px}
+.submit-btn{width:100%;padding:14px;background:var(--navy);color:#fff;border:none;border-radius:12px;font-family:var(--fn);font-size:1rem;font-weight:700;cursor:pointer;transition:0.3s}
+.submit-btn:hover{background:var(--gold);color:#fff}
+/* FOOTER */
+footer{background:var(--navy);color:#fff;padding:40px 0}
+footer .container{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px}
+footer h5{color:var(--gold);font-size:1rem;margin-bottom:12px}
+footer p,footer a{font-size:0.85rem;opacity:0.85;transition:0.3s}
+footer a:hover{opacity:1;color:var(--gold)}
+footer ul{list-style:none}
+footer ul li{margin-bottom:6px}
+footer .social-links{display:flex;gap:12px;margin-top:12px}
+footer .social-links a{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:rgba(255,255,255,0.1);border-radius:50%;font-size:1rem;transition:0.3s}
+footer .social-links a:hover{background:var(--gold);color:#fff}
+.footer-bottom{text-align:center;padding:16px 0 0;border-top:1px solid rgba(255,255,255,0.1);margin-top:24px;font-size:0.8rem;opacity:0.7}
+/* MOBILE */
+@media(max-width:768px){
+nav .nav-links{display:none}
+.hero-stats{gap:20px}
+.feature-row.reverse{direction:rtl}
+.form-row{grid-template-columns:1fr}
+footer .container{grid-template-columns:1fr;text-align:center}
+footer .social-links{justify-content:center}
+}
+</style>
+<script type="application/ld+json">
+[{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "توصيل أكسجين ومستلزمات طبية — إيليت كير",
+  "description": "خدمة توصيل أكسجين ومستلزمات طبية للمنازل في القاهرة والجيزة.",
+  "provider": { "@id": "https://elite-ambulance.online/#organization" },
+  "areaServed": ["القاهرة","الجيزة"],
+  "serviceType": "Oxygen Delivery Service"
+},
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://elite-ambulance.online/" },
+    { "@type": "ListItem", "position": 2, "name": "توصيل أكسجين", "item": "https://elite-ambulance.online/services/oxygen-delivery/" }
+  ]
+}]
+</script>
+</head>
+<body>
+
+<nav>
+<div class="container">
+<a href="../index.html" class="logo">ELITE <span>CARE</span></a>
+<ul class="nav-links">
+<li><a href="../index.html">الرئيسية</a></li>
+<li><a href="../index.html#services">خدماتنا</a></li>
+<li><a href="../index.html#about">من نحن</a></li>
+<li><a href="../index.html#booking">احجز الآن</a></li>
+<li><a href="../index.html#contact">اتصل بنا</a></li>
+</ul>
+<a href="tel:01060349212" class="phone-cta">📞 01060349212</a>
+</div>
+</nav>
+
+<section class="hero">
+<div class="container">
+<span class="hero-badge">خدمة 24/7</span>
+<h1>توصيل أكسجين ومستلزمات طبية للمنازل</h1>
+<p>نوفر أسطوانات الأكسجين ومكثفات الأكسجين وأجهزة التنفس وجميع المستلزمات الطبية للمنازل والمستشفيات في جميع أنحاء مصر — توصيل فوري وصيانة دورية وجودة مضمونة.</p>
+<div class="hero-stats">
+<div><strong>15+</strong><span>عام خبرة</span></div>
+<div><strong>24/7</strong><span>خدمة على مدار الساعة</span></div>
+<div><strong>30 دقيقة</strong><span>متوسط وقت التوصيل</span></div>
+<div><strong>5000+</strong><span>عميل</span></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2 class="section-title">منتجاتنا <span>وخدماتنا</span></h2>
+<div class="grid-4">
+<div class="feature-card"><div class="icon">🫁</div><h3>أسطوانات أكسجين</h3><p>أسطوانات أكسجين نقية بجميع السعات — 5 لتر، 10 لتر، 20 لتر — مع مقياس ضغط ومنظم تدفق، تتوفر للتوصيل الفوري والاستبدال.</p></div>
+<div class="feature-card"><div class="icon">⚡</div><h3>مكثفات أكسجين</h3><p>أجهزة مكثف أكسجين منزلية 5-10 لتر/دقيقة — صيانة دورية، ضمان شامل، تدريب على الاستخدام، مع خيارات الإيجار والتمليك.</p></div>
+<div class="feature-card"><div class="icon">💨</div><h3>أجهزة تنفس (Ventilator)</h3><p>أجهزة تنفس صناعي منزلية ومحمولة — دعم فني 24/7، صيانة دورية، تركيب مجاني، متوافقة مع جميع الاحتياجات الطبية.</p></div>
+<div class="feature-card"><div class="icon">🩺</div><h3>مستلزمات طبية متنوعة</h3><p>أسرّة طبية، كراسي متحركة، أجهزة ضغط، مبخرة، شفاط، طلمبة محاليل، أسطوانات غاز طبي، وجميع المستلزمات المنزلية.</p></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2 class="section-title">لماذا <span>تختارنا؟</span></h2>
+<div class="feature-row">
+<img src="../assets/images/services/oxygen-delivery-new.webp" alt="توصيل أكسجين" width="600" height="375" loading="lazy" onerror="this.style.background='linear-gradient(135deg,var(--navy),#0A2A4A)';this.style.display='flex';this.style.alignItems='center';this.style.justifyContent='center';this.style.padding='80px 0';this.style.color='#EF4444';this.style.fontSize='1.5rem';this.style.textAlign='center';this.alt='';this.src='';this.innerHTML='توصيل أكسجين'">
+<div>
+<h3>توصيل فوري وصيانة دورية</h3>
+<p>فريقنا متاح 24 ساعة طوال أيام الأسبوع لتوصيل الأكسجين والمستلزمات الطبية أينما كنت. نوفر خدمة الصيانة الدورية للأجهزة لضمان عملها بكفاءة.</p>
+<ul>
+<li>توصيل خلال 30-60 دقيقة داخل القاهرة الكبرى</li>
+<li>فنيون معتمدون للصيانة والتركيب</li>
+<li>عقود صيانة دورية شهرية وربع سنوية</li>
+<li>خدمة استبدال أسطوانات على مدار الساعة</li>
+<li>خدمة استبدال أسطوانات الأكسجين 24/7</li>
+</ul>
+</div>
+</div>
+<div class="feature-row reverse">
+<img src="../assets/images/services/oxygen-delivery-new.webp" alt="مستلزمات طبية" width="600" height="375" loading="lazy" onerror="this.style.background='linear-gradient(135deg,var(--navy),#0A2A4A)';this.style.display='flex';this.style.alignItems='center';this.style.justifyContent='center';this.style.padding='80px 0';this.style.color='#EF4444';this.style.fontSize='1.5rem';this.style.textAlign='center';this.alt='';this.src='';this.innerHTML='مستلزمات طبية'">
+<div>
+<h3>مستلزمات طبية عالية الجودة</h3>
+<p>نوفر مجموعة متكاملة من المستلزمات الطبية المنزلية من أفضل الماركات العالمية، مع ضمان الجودة وخدمة ما بعد البيع.</p>
+<ul>
+<li>أسرّة طبية كهربائية ويدوية</li>
+<li>كراسي متحركة وعكازات ومشايات</li>
+<li>أجهزة قياس ضغط وسكر وحرارة</li>
+<li>مباخر وشفاطات وأسرة عناية مركزة</li>
+<li>مستلزمات عناية بالجروح والتنفس</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2 class="section-title">الأسئلة <span>الشائعة</span></h2>
+<div class="faq-item active">
+<div class="faq-q">كم يستغرق وقت توصيل الأكسجين؟ <span class="arrow">▼</span></div>
+<div class="faq-a"><p>يستغرق التوصيل من 30 إلى 60 دقيقة داخل القاهرة الكبرى، وحتى 3 ساعات خارجها حسب الموقع. نعمل على مدار الساعة طوال أيام الأسبوع.</p></div>
+</div>
+<div class="faq-item">
+<div class="faq-q">هل توفرون مكثفات أكسجين للإيجار؟ <span class="arrow">▼</span></div>
+<div class="faq-a"><p>نعم، نوفر مكثفات أكسجين منزلية وأجهزة تنفس صناعي للإيجار والتمليك مع عقود صيانة دورية وضمان شامل.</p></div>
+</div>
+<div class="faq-item">
+<div class="faq-q">هل تقومون بتركيب الأجهزة الطبية في المنزل؟ <span class="arrow">▼</span></div>
+<div class="faq-a"><p>نعم، فريقنا الفني المتخصص يقوم بتركيب جميع الأجهزة الطبية مجاناً وتدريب المريض وأسرته على الاستخدام الآمن.</p></div>
+</div>
+<div class="faq-item">
+<div class="faq-q">ما هي مناطق تغطية الخدمة؟ <span class="arrow">▼</span></div>
+<div class="faq-a"><p>نغطي جميع محافظات مصر — القاهرة الكبرى، الإسكندرية، الدلتا، الصعيد، والساحل الشمالي. يمكنك الاتصال بنا للاستفسار عن منطقتك.</p></div>
+</div>
+</div>
+</section>
+
+<section class="cta">
+<div class="container">
+<h2>احصل على الأكسجين الآن — 24/7</h2>
+<p>اتصل بنا الآن وسيصل فريقنا إليك في أقرب وقت. خدمة طوارئ على مدار الساعة.</p>
+<a href="tel:01060349212" class="cta-btn">📞 01060349212</a>
+</div>
+</section>
+
+<section class="booking-section" id="booking">
+<div class="container">
+<h2 class="section-title">احجز <span>الخدمة</span></h2>
+<form class="booking-form" id="bookingForm" onsubmit="event.preventDefault();sendBooking()">
+<div class="form-row">
+<div class="form-group"><input type="text" id="bName" class="booking-input" placeholder="الاسم الكامل" required></div>
+<div class="form-group"><input type="tel" id="bPhone" class="booking-input" placeholder="رقم الهاتف" required></div>
+</div>
+<div class="form-row">
+<div class="form-group"><input type="text" id="bLocation" class="booking-input" placeholder="العنوان / المنطقة" required></div>
+<div class="form-group"><input type="text" id="bDate" class="booking-input" placeholder="التاريخ (اختياري)" onfocus="this.type='date'"></div>
+</div>
+<div class="form-group full">
+<select id="bService" class="booking-input" required>
+<option value="">اختر الخدمة...</option>
+<option value="أسطوانات أكسجين" selected>أسطوانات أكسجين</option>
+<option value="مكثفات أكسجين">مكثفات أكسجين</option>
+<option value="أجهزة تنفس">أجهزة تنفس</option>
+<option value="أسرّة طبية">أسرّة طبية</option>
+<option value="كراسي متحركة">كراسي متحركة</option>
+<option value="توصيل أكسجين ومستلزمات طبية">توصيل أكسجين ومستلزمات طبية</option>
+<option value="نقل عناية مركزة ICU">نقل عناية مركزة ICU</option>
+<option value="إسعاف دعم حياة متقدم">إسعاف دعم حياة متقدم</option>
+<option value="نقل مرضى بين مستشفيات">نقل مرضى بين مستشفيات</option>
+<option value="تمريض منزلي">تمريض منزلي</option>
+<option value="استشارة طبيب منزلي">استشارة طبيب منزلي</option>
+<option value="تحاليل طبية منزلية">تحاليل طبية منزلية</option>
+<option value="أشعة منزلية">أشعة منزلية</option>
+<option value="علاج طبيعي منزلي">علاج طبيعي منزلي</option>
+<option value="رعاية كبار السن">رعاية كبار السن</option>
+<option value="حقن ومحاليل منزلية">حقن ومحاليل منزلية</option>
+<option value="تغطية طبية للفعاليات">تغطية طبية للفعاليات</option>
+<option value="سيارات إسعاف حديثة مجهزة">سيارات إسعاف حديثة مجهزة</option>
+<option value="إسعاف جوي وإخلاء طبي">إسعاف جوي وإخلاء طبي</option>
+</select>
+</div>
+<div class="form-group full"><textarea id="bMsg" class="booking-input" placeholder="تفاصيل إضافية (نوع الجهاز، الكمية، ملاحظات...)"></textarea></div>
+<button type="submit" class="submit-btn">إرسال الطلب</button>
+</form>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div>
+<h5>ELITE CARE</h5>
+<p>شركة Elite Care للنقل الصحي والخدمات الطبية المنزلية — نقدم حلولاً متكاملة في جميع محافظات مصر. اتصل بنا 24/7.</p>
+<div class="social-links">
+<a href="#" aria-label="فيسبوك">f</a>
+<a href="#" aria-label="واتساب">w</a>
+<a href="#" aria-label="تويتر">t</a>
+</div>
+</div>
+<div>
+<h5>خدمات الإسعاف</h5>
+<ul>
+<li><a href="icu-ambulance.html">نقل عناية مركزة ICU</a></li>
+<li><a href="emergency-ambulance.html">إسعاف دعم الحياة</a></li>
+<li><a href="patient-transfer.html">نقل مرضى بين مستشفيات</a></li>
+<li><a href="air-ambulance.html">إسعاف جوي وإخلاء طبي</a></li>
+<li><a href="modern-fleet.html">سيارات حديثة مجهزة</a></li>
+</ul>
+</div>
+<div>
+<h5>خدمات منزلية</h5>
+<ul>
+<li><a href="home-nursing.html">تمريض منزلي</a></li>
+<li><a href="doctor-home-visit.html">استشارة طبيب منزلي</a></li>
+<li><a href="medical-equipment.html">تأجير أجهزة طبية</a></li>
+<li><a href="physiotherapy.html">علاج طبيعي منزلي</a></li>
+<li><a href="elderly-care.html">رعاية كبار السن</a></li>
+<li><a href="injections.html">حقن ومحاليل منزلية</a></li>
+<li><a href="labs.html">تحاليل طبية منزلية</a></li>
+<li><a href="radiology.html">أشعة منزلية</a></li>
+<li><a href="event-coverage.html">تغطية طبية للفعاليات</a></li>
+<li><a href="oxygen-delivery.html">توصيل أكسجين ومستلزمات طبية</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom"><p>© 2024 Elite Care. جميع الحقوق محفوظة.</p></div>
+</footer>
+
+<script>
+function sendBooking(){
+const name=document.getElementById('bName').value.trim();
+const phone=document.getElementById('bPhone').value.trim();
+const location=document.getElementById('bLocation').value.trim();
+const service=document.getElementById('bService').value;
+if(!name||!phone||!location||!service){alert('يرجى ملء جميع الحقول المطلوبة');return}
+const msg=encodeURIComponent(`طلب توصيل أكسجين:\nالاسم: ${name}\nالهاتف: ${phone}\nالعنوان: ${location}\nالخدمة: ${service}\nملاحظات: ${document.getElementById('bMsg').value}`);
+window.open(`https://wa.me/201060349212?text=${msg}`,'_blank');
+}
+document.querySelectorAll('.faq-q').forEach(q=>{q.addEventListener('click',()=>{q.parentElement.classList.toggle('active')})});
+</script>
+<style>
+/* Floating WhatsApp (desktop) — unified across the site */
+.whatsapp-float{position:fixed;bottom:82px;left:20px;z-index:999;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,0.4);transition:all .3s}
+.whatsapp-float:hover{transform:scale(1.1)}
+.whatsapp-float svg{width:28px;height:28px;fill:#fff}
+.sticky-bar{display:none;position:fixed;bottom:0;right:0;left:0;background:#04111E;border-top:2px solid #DC2626;z-index:999;padding:10px 12px;gap:10px;padding-bottom:max(10px,env(safe-area-inset-bottom))}
+.sticky-bar a{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;padding:12px 10px;border-radius:10px;text-decoration:none;font-weight:800;font-size:.85rem;min-height:48px}
+.sticky-call{background:#DC2626;color:#fff}
+.sticky-wa{background:#16A34A;color:#fff}
+@media (max-width:768px){
+  .whatsapp-float{display:none}
+  .sticky-bar{display:flex}
+  footer{padding-bottom:96px}
+}
+</style>
+<a href="https://wa.me/201111456662" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="تواصل عبر واتساب"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+<div class="sticky-bar" role="region" aria-label="التواصل السريع">
+  <a href="tel:01060349212" class="sticky-call">📞 اتصل الآن</a>
+  <a href="https://wa.me/201111456662" class="sticky-wa" target="_blank" rel="noopener noreferrer">💬 واتساب</a>
+</div>
+
+</body>
+</html>
+

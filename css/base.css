@@ -1,0 +1,335 @@
+/* =============================================================
+   BASE.CSS — Reset · Variables · Typography · Core Layout
+   Elite Care Ambulance — elite-ambulance.online
+   ============================================================= */
+
+/* ===== ACCESSIBILITY: Reduced Motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* ===== RESET ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== DESIGN TOKENS ===== */
+:root {
+  /* Brand Colors */
+  --red:        #DC2626;
+  --red-d:      #B91C1C;
+  --red-xl:     #991B1B;
+  --red-lg:     #EF4444;
+  --red-bg:     rgba(220, 38, 38, 0.08);
+  --red-brd:    rgba(220, 38, 38, 0.2);
+
+  --blue:       #1E40AF;
+  --blue-bg:    rgba(30, 64, 175, 0.08);
+
+  --gold:       #C9A84C;
+  --navy:       #04111E;
+  --navy2:      #071E38;
+  --white:      #FFFFFF;
+  --off:        #F8F9FB;
+
+  /* Grays */
+  --g100:  #F1F3F5;
+  --g200:  #E2E5EA;
+  --g300:  #d1d5db;
+  --g400:  #96A0AE;
+  --g600:  #4A5568;
+  --g700:  #374151;
+  --g800:  #1A202C;
+
+  /* Semantic */
+  --green: #16A34A;
+
+  /* Typography */
+  --fn: 'Cairo', sans-serif;
+  --fb: 'Tajawal', sans-serif;
+
+  /* Motion */
+  --ease:        cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Border Radius */
+  --r8:  8px;
+  --r14: 14px;
+  --r20: 20px;
+  --r32: 32px;
+
+  /* Shadows */
+  --sh-sm:     0 2px 8px rgba(0, 0, 0, 0.08);
+  --sh-md:     0 8px 24px rgba(0, 0, 0, 0.12);
+  --sh-red:    0 8px 28px rgba(220, 38, 38, 0.35);
+  --sh-red-lg: 0 16px 48px rgba(220, 38, 38, 0.40);
+  --sh-blue:   0 8px 28px rgba(30, 64, 175, 0.30);
+
+  /* Focus */
+  --focus-ring: 0 0 0 3px rgba(255, 215, 0, 0.6);
+}
+
+/* ===== BASE STYLES ===== */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--fb);
+  color: var(--g800);
+  background: var(--white);
+  direction: rtl;
+  overflow-x: hidden;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== SKIP LINK (Accessibility) ===== */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  right: 0;
+  padding: 12px 20px;
+  background: var(--red);
+  color: #fff;
+  font-family: var(--fn);
+  font-weight: 700;
+  text-decoration: none;
+  z-index: 9999;
+  border-radius: 0 0 var(--r8) 0;
+}
+.skip-link:focus { top: 0; }
+
+/* ===== PROGRESS BAR ===== */
+#progress {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+  background: var(--red);
+  transform-origin: right;
+  transform: scaleX(0);
+  z-index: 2000;
+  transition: transform 0.1s linear;
+}
+
+/* ===== CUSTOM CURSOR (desktop fine-pointer only) ===== */
+@media (pointer: fine) {
+  .cursor-dot {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: var(--red);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(50%, -50%);
+    transition:
+      transform 0.15s var(--ease),
+      width 0.15s var(--ease),
+      height 0.15s var(--ease);
+  }
+  .cursor-dot.hover {
+    width: 32px;
+    height: 32px;
+    background: rgba(225, 29, 72, 0.55);
+  }
+}
+
+@media (pointer: coarse) {
+  .cursor-dot { display: none; }
+}
+
+/* ===== SECTION WRAPPER ===== */
+.section { padding: 88px 5%; }
+
+.section-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+/* ===== CHIP / BADGE ===== */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--red-bg);
+  color: var(--red);
+  padding: 5px 13px;
+  border-radius: 50px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  font-family: var(--fn);
+  letter-spacing: 0.04em;
+  margin-bottom: 12px;
+  border: 1px solid var(--red-brd);
+}
+
+/* ===== HEADINGS ===== */
+.section h2 {
+  font-family: var(--fn);
+  font-size: clamp(1.6rem, 2.8vw, 2.3rem);
+  font-weight: 900;
+  color: var(--g800);
+  margin-bottom: 12px;
+  line-height: 1.28;
+}
+.section h2 .accent { color: var(--red); }
+
+.section-desc {
+  color: var(--g600);
+  font-size: 0.95rem;
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.9;
+}
+
+/* ===== SHARED BUTTONS ===== */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--red);
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: var(--r8);
+  font-family: var(--fn);
+  font-size: 0.97rem;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  min-height: 52px;
+  transition:
+    background 0.25s var(--ease),
+    transform 0.25s var(--ease),
+    box-shadow 0.25s var(--ease);
+}
+.btn-primary:hover {
+  background: var(--red-d);
+  transform: translateY(-2px);
+  box-shadow: var(--sh-red-lg);
+}
+.btn-primary:active { transform: translateY(0); box-shadow: none; }
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.07);
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 26px;
+  border-radius: var(--r8);
+  font-family: var(--fn);
+  font-size: 0.93rem;
+  font-weight: 700;
+  border: 1.5px solid rgba(255, 255, 255, 0.16);
+  cursor: pointer;
+  min-height: 52px;
+  transition: all 0.25s var(--ease);
+}
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.36);
+  transform: translateY(-2px);
+}
+
+.btn-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #fff;
+  color: var(--red);
+  text-decoration: none;
+  padding: 15px 32px;
+  border-radius: var(--r8);
+  font-family: var(--fn);
+  font-weight: 900;
+  font-size: 0.96rem;
+  min-height: 52px;
+  transition: all 0.25s var(--ease);
+}
+.btn-white:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
+}
+
+.btn-outline-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 26px;
+  border-radius: var(--r8);
+  min-height: 52px;
+  border: 2px solid rgba(255, 255, 255, 0.36);
+  font-family: var(--fn);
+  font-weight: 700;
+  font-size: 0.93rem;
+  transition: all 0.25s var(--ease);
+}
+.btn-outline-white:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+  transform: translateY(-2px);
+}
+
+/* ===== SVG ICON SYSTEM ===== */
+.icon {
+  width: 1.1em;
+  height: 1.1em;
+  vertical-align: -0.15em;
+  fill: none;
+  stroke: currentColor;
+  flex-shrink: 0;
+}
+.icon-sm { width: 0.9em; height: 0.9em; }
+.icon-lg { width: 1.4em; height: 1.4em; }
+.icon-xl { width: 2em; height: 2em; }
+
+/* ===== FOCUS INDICATORS (Accessibility) ===== */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+  box-shadow: var(--focus-ring);
+}
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+  box-shadow: var(--focus-ring);
+  border-radius: 4px;
+}
+/* Remove outline for mouse clicks */
+:focus:not(:focus-visible) { outline: none; }
+
+/* ===== SCROLL BEHAVIOR — respect reduced motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* ===== LOGO POSITION — align logo to the right in RTL navbar ===== */
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-inline-end: auto;
+  text-decoration: none;
+}
