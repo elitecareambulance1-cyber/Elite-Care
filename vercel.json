@@ -40,6 +40,8 @@
     { "source": "/cairo/maadi/",        "destination": "/cairo/maadi.html" },
     { "source": "/cairo/new-cairo",     "destination": "/cairo/new-cairo.html" },
     { "source": "/cairo/new-cairo/",    "destination": "/cairo/new-cairo.html" },
+    { "source": "/cairo/heliopolis",    "destination": "/cairo/heliopolis.html" },
+    { "source": "/cairo/heliopolis/",   "destination": "/cairo/heliopolis.html" },
     { "source": "/cairo/sheikh-zayed",  "destination": "/cairo/sheikh-zayed.html" },
     { "source": "/cairo/sheikh-zayed/", "destination": "/cairo/sheikh-zayed.html" },
     { "source": "/cairo/dokki",         "destination": "/cairo/dokki.html" },
