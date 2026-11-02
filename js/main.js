@@ -174,14 +174,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// ClickBan + Google Ads conversions
+// Google Ads conversions — the ClickBan script is placed statically in each
+// page's <head> (inject-clickban.js), so no dynamic injection happens here.
 (function () {
-  var s = document.createElement('script');
-  s.src = 'https://clickban.org/assets/js/cf.js';
-  s.async = true;
-  s.setAttribute('data-k', 'acf33b9ea78504e8');
-  document.head.appendChild(s);
-
   if (typeof gtag === 'function') gtag('config', 'AW-18478345071');
 
   document.addEventListener('click', function (e) {
