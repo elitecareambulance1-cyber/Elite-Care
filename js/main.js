@@ -80,7 +80,8 @@ function initNav() {
 function submitBooking(event) {
   event.preventDefault();
   const name    = document.getElementById('bName').value.trim();
-  const phone   = document.getElementById('bPhone').value.trim();
+  const phoneEl = document.getElementById('bPhone');
+  const phone   = phoneEl.value.trim();
   const area    = document.getElementById('bArea').value.trim();
   const service = document.getElementById('bService').value;
   const date    = document.getElementById('bDate').value;
@@ -89,9 +90,32 @@ function submitBooking(event) {
 
   if (!name || !phone || !area || !service || !date || !time) return false;
 
+  // Egyptian mobile: 11 digits starting 010/011/012/015.
+  // Normalize common formats: spaces/dashes, +20/20 country code.
+  const normPhone = phone.replace(/[\s-()]/g, '').replace(/^\+?20(?=1[0125])/, '0');
+  const phoneRe = /^01[0125]\d{8}$/;
+
+  if (!phoneRe.test(normPhone)) {
+    phoneEl.classList.add('input-error');
+    let hint = phoneEl.parentElement.querySelector('.field-error');
+    if (!hint) {
+      hint = document.createElement('div');
+      hint.className = 'field-error';
+      phoneEl.parentElement.appendChild(hint);
+    }
+    hint.textContent = '⚠️ رقم غير صحيح — أدخل رقم موبايل مصري (مثال: 01012345678)';
+    phoneEl.focus();
+    return false;
+  }
+  // Clear error state on valid submission
+  phoneEl.classList.remove('input-error');
+  const oldHint = phoneEl.parentElement.querySelector('.field-error');
+  if (oldHint) oldHint.remove();
+
+  const callbackPhone = normPhone; // safe number for callbacks
   const text = `🔖 *حجز خدمة جديدة*
 👤 الاسم: ${name}
-📞 الهاتف: ${phone}
+📞 الهاتف: ${callbackPhone}
 📍 المنطقة: ${area}
 🛠️ الخدمة: ${service}
 📅 التاريخ: ${date}
@@ -103,7 +127,7 @@ function submitBooking(event) {
   // Send email via FormSubmit (free, no account needed)
   const formData = new FormData();
   formData.append('name', name);
-  formData.append('phone', phone);
+  formData.append('phone', callbackPhone);
   formData.append('area', area);
   formData.append('service', service);
   formData.append('date', date);
@@ -116,7 +140,10 @@ function submitBooking(event) {
   fetch('https://formsubmit.co/elite.care.ambulance1@gmail.com', {
     method: 'POST',
     body: formData
-  }).catch(() => {});
+  }).catch(() => {
+    console.error('[EliteCare] FormSubmit failed — user notified');
+    alert('⚠️ تعذر إرسال الطلب عبر الموقع.\nاتصل فورًا: 01060349212 أو راسلنا واتساب');
+  });
 
   if (typeof gtag === 'function') {
     gtag('event', 'booking_submit', {
@@ -136,6 +163,15 @@ function submitBooking(event) {
 document.addEventListener('DOMContentLoaded', () => {
   initFAQ();
   initNav();
+
+  // Phone fields: clear validation error state while the user types
+  document.querySelectorAll('#bPhone').forEach((el) => {
+    el.addEventListener('input', () => {
+      el.classList.remove('input-error');
+      const hint = el.parentElement.querySelector('.field-error');
+      if (hint) hint.remove();
+    });
+  });
 });
 
 // ClickBan + Google Ads conversions

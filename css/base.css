@@ -18,6 +18,13 @@
   padding: 0;
 }
 
+/* Images: CSS-driven sizing baseline. The HTML width/height attributes supply
+   the aspect-ratio (CLS=0); any scoped/inline rules below override this. */
+img {
+  height: auto;
+  max-width: 100%;
+}
+
 /* ===== DESIGN TOKENS ===== */
 :root {
   /* Brand Colors */

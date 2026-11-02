@@ -56,22 +56,25 @@ const Modal = (() => {
     const msg    = LocationService.buildWhatsAppMessage();
     const waUrl  = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
 
-    // Show success state
+    /* Open WhatsApp SYNCHRONOUSLY inside the user-gesture.
+       iOS Safari blocks window.open / link.click() once the event loop
+       has moved on (e.g. inside setTimeout), so this must happen first,
+       before any delay or animation. */
+    const link = document.createElement('a');
+    link.href   = waUrl;
+    link.target = '_blank';
+    link.rel    = 'noopener noreferrer';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+
+    // Then show success state
     formSection.style.display    = 'none';
     successSection.style.display = 'block';
 
     // Focus the success message for screen readers
     const heading = successSection.querySelector('h4');
     if (heading) heading.focus();
-
-    // Open WhatsApp after short delay (allows success animation to render)
-    setTimeout(() => {
-      const link = document.createElement('a');
-      link.href   = waUrl;
-      link.target = '_blank';
-      link.rel    = 'noopener noreferrer';
-      link.click();
-    }, 800);
   }
 
   /* ─────────────────────────────────
@@ -185,6 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     } else {
-        console.error("IDs not found! Check your HTML for 'openVideo' and 'videoOverlay'");
+        // الصفحات التي لا تملك فيديو (المدونة والمقالات) — سلوك سليم متوقع، لا خطأ
+        console.info("No video overlay on this page — skipped");
     }
 });

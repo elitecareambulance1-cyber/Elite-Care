@@ -137,6 +137,18 @@
 .booking-form .booking-input::placeholder {
   color: var(--g400);
 }
+/* phone validation error state (main.js) */
+.booking-form .input-error {
+  border-color: #DC2626 !important;
+  background: #FEF2F2;
+  box-shadow: 0 0 0 3px rgba(220,38,38,0.15);
+}
+.field-error {
+  margin-top: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #DC2626;
+}
 .booking-form select.booking-input {
   cursor: pointer;
   appearance: none;
